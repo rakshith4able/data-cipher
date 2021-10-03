@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+header
+{
+    background-color: #14213d;
+    color: #e5e5e5;
+    text-align: center;
+    display: grid;
+}
+
+header h1
+{
+align-self: center; 
+font-size: 2rem;   
+}
+
+.container{
+    display: grid;
+    background-color: #e5e5e5;
+}
+
+.container form{
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1.5rem;
+    border-radius: 1em;
+    width: 350px;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    grid-gap:20px;
+    color: white;
+}
+
+.container form h2{
+    font-size: 1.2rem;
+}
+
+.container input,.container label,.container select,.file-input{
+    display: block;
+    font-size: 1rem;
+    width: 300px;
+}
+
+.container input,.container select,.file-input
+{
+    padding: 0.4em;
+    background-color: #fff;
+}
+
+.container input[type="file"]
+{
+    background-color: #fca311;
+}
+
+.container button[type="submit"]
+{
+    width: 300px;
+    padding: 0.5rem;
+    background-color: rgb(218, 54, 54);
+    outline: none;
+    border:none;
+    color:white;
+    border-radius: 0.2em;
+}
+footer{
+    background-color: #000000;
+    color: white;
+    display: grid;
+}
+
+footer h2{
+    align-self: center;
+    text-align: center;
+    font-size: 0.7rem;  
+}
+
+
+.file-input {
+    display:block;
+    text-align: left;
+    background: #fff;
+    position: relative;
+    border-radius: 3px;
+  }
+  
+  .file-input > [type='file'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+  }
+  
+  .file-input > .button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4em;
+    background: rgb(255, 166, 0);
+    border-radius: 2px;
+  }
+  
+  .file-input:hover > .button {
+     color: white;
+  }
+  
+  .file-input > .label {
+    color: #333;
+    white-space: nowrap;
+    opacity: .3;
+  }
+  
+  .file-input.-chosen > .label {
+    opacity: 1;
+  }
+
+@media (max-width:400px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .container .form{
+        width:320px;
+        border-radius: 10px;
+    }
+
+    .container input,.container label,.container select, .file-input{
+        display: block;
+        font-size: 1rem;
+        width: 250px;
+    }
+
+    .container button[type="submit"]
+    {
+        width: 250px;
+    }
+    
+
+    
+}
