@@ -89,7 +89,7 @@ if (isset($_POST) && isset($_POST['action'])) {
 
 <body>
     <header>
-        <h1>Data Cipher</h1>
+        <h1>Data Cipher- By Rakshiii</h1>
     </header>
 
     <div class="container">
@@ -159,6 +159,6 @@ if (isset($_POST) && isset($_POST['action'])) {
         const form = document.querySelector('form');
         form.addEventListener('onSubmit', (e) => { e.preventDefault(); })
     </script>
-</body>
+</body> 
 
 </html>
